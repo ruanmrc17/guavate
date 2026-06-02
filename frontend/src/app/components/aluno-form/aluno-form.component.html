@@ -1,0 +1,18 @@
+<div style="border: 1px solid #ccc; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <h3>Novo Cadastro</h3>
+  
+  <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+    <input type="text" placeholder="Nome do Aluno" [(ngModel)]="aluno.nome">
+    <input type="text" placeholder="Nome do Responsável" [(ngModel)]="aluno.responsavel">
+    <input type="text" placeholder="WhatsApp (Ex: 11999999999)" [(ngModel)]="aluno.telefone">
+  </div>
+  
+  <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+    <input type="number" placeholder="Valor Mensalidade (Ex: 800)" [(ngModel)]="aluno.valor_mensalidade">
+    <input type="number" placeholder="Dia do Vencimento (Ex: 5)" [(ngModel)]="aluno.dia_vencimento">
+  </div>
+
+  <button (click)="salvarAluno()" style="padding: 10px 20px; background: #28a745; color: white; border: none; cursor: pointer;">
+    Salvar Aluno
+  </button>
+</div>
